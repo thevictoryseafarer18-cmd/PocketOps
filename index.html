@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PocketOps — briefings and drafts with memory you control</title>
+  <meta name="description" content="PocketOps drafts daily briefings and replies using only the preferences you approve, and shows exactly what is sent to Nebius before anything leaves the app.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f3a5f'/%3E%3Cpath d='M9 22V10h7a4 4 0 010 8h-3' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" aria-label="PocketOps home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-name">PocketOps</span>
+      </a>
+      <nav id="nav" aria-label="Primary">
+        <a href="#/" data-route="">Home</a>
+        <a href="#/library" data-route="library">Notes &amp; tasks</a>
+        <a href="#/memory" data-route="memory">Memory</a>
+        <a href="#/activity" data-route="activity">Activity</a>
+        <a href="#/privacy" data-route="privacy">Privacy &amp; setup</a>
+      </nav>
+      <a id="model-pill" class="pill pill-muted" href="#/privacy" aria-live="polite">Nebius model call: checking…</a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer">
+    <p>PocketOps is a hackathon demo. Outputs are <strong>drafts</strong>; nothing is sent, posted or scheduled for you. Your data is stored in a local, unencrypted JSON file; only text you approve is sent to Nebius Token Factory.</p>
+  </footer>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

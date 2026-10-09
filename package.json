@@ -1,0 +1,18 @@
+{
+  "name": "pocketops",
+  "version": "0.1.0",
+  "description": "PocketOps — a personal workflow assistant with inspectable, user-approved memory and review-before-send context for Nebius Token Factory (NVIDIA Nemotron).",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/",
+    "check": "node scripts/check.js && node --test test/"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
